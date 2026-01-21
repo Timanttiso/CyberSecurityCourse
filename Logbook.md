@@ -10,3 +10,4 @@
 | 13.1.2026 | 0.5 | Cisco Cyber Security Course | Finished module 5 and did the final exam |
 | 15.1.2026 | 1.5 | Introduction to PortSwigger | Took part in a lecture and learned about topics such as: PortSwigger, CWE, CVE and OWASP |
 | 19.1.2026 | 2.5 | Portswigger | Completed the first 2 labs of the SQL injection category and the first lab from the authentication category|
+| 21.1.2026 | 2.0 | Portswigger | Completed the second lab from the authentication category and completed two labs from the access control category. Finished and returned the Introduction to the PortSwigger enviorement task.|
