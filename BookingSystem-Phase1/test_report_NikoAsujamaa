@@ -7,14 +7,14 @@
 - Describe the purpose of this test (e.g., identify vulnerabilities in registration and authentication flows).
 
 **Scope:**  
-- Tested components:  
-- Exclusions:  
+- Tested components: Registration page
+- Exclusions: -
 - Test approach: Gray-box / Black-box / White-box
 
 **Test environment & dates:**  
 - Start:  23.1.2026 12.47
 - End:  23.1.2026 13.02
-- Test environment details (OS, runtime, DB, browsers):
+- Test environment details (OS, runtime, DB, browsers): Windows 11 Pro, PostgreSQL, Opera GX(Google)
 
 **Assumptions & constraints:**  
 - e.g., credentials provided, limited time, etc.
