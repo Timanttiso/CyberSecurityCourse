@@ -54,9 +54,10 @@ Penetration testing done to the registration page of the booking system with ZAP
 
 | ID | Severity | Finding | Description | Evidence / Proof |
 |------|-----------|----------|--------------|------------------|
-| F-01 | 🔴 High | SQL Injection in registration page | Input field allows `' OR '1'='1` injection | Screenshot or sqlmap result |
-| F-02 | 🟠 Medium | Session fixation | Session ID remains unchanged after login | Burp log or response headers |
-| F-03 | 🟡 Low | Weak password policy | Accepts passwords like "12345" | Screenshot of registration success |
+| F-01 | 🔴 High | SQL Injection in registration page | Input field allows OR '1'='1` -- and AND '1'='1` -- injections | ZAP report flag |
+| F-02 | 🔴 High | Passwords in database exposed | Passwords are not hashed/encrypted in the database | Burp log or response headers |
+| F-03 | 🔴 High | Path traversal | Passwords are not hashed/encrypted in the database | Burp log or response headers |
+| F-05 | 🟡 Low | Weak password policy | Accepts weak passwords and no checks done to how long the password is or what it contains | Screenshot of registration success |
 
 ---
 
