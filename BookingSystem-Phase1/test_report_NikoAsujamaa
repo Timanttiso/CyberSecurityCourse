@@ -55,8 +55,8 @@ Penetration testing done to the registration page of the booking system with ZAP
 | ID | Severity | Finding | Description | Evidence / Proof |
 |------|-----------|----------|--------------|------------------|
 | F-01 | 🔴 High | SQL Injection in registration page | Input field allows OR '1'='1` -- and AND '1'='1` -- injections | ZAP report flag |
-| F-02 | 🔴 High | Passwords in database exposed | Passwords are not hashed/encrypted in the database | Burp log or response headers |
-| F-03 | 🔴 High | Path traversal | Passwords are not hashed/encrypted in the database | Burp log or response headers |
+| F-02 | 🔴 High | Passwords in database exposed | Passwords are not hashed/encrypted in the database | Passwords clearly visible: https://github.com/Timanttiso/CyberSecurityCourse/blob/main/BookingSystem-Phase1/AddedUsers.png |
+| F-03 | 🔴 High | Path traversal | Files and directories possibly accessable for attackers | ZAP report flag |
 | F-05 | 🟡 Low | Weak password policy | Accepts weak passwords and no checks done to how long the password is or what it contains | Screenshot of registration success |
 
 ---
