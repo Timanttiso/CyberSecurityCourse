@@ -8,7 +8,7 @@
 
 **Scope:**  
 - Tested components: Registration page
-- Exclusions: -
+- Exclusions: Log in page
 - Test approach: Gray-box 
 
 **Test environment & dates:**  
