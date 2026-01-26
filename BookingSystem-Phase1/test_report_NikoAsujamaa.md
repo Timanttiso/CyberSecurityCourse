@@ -57,7 +57,7 @@ Penetration testing done to the registration page of the booking system with ZAP
 | F-02 | 🔴 High | Passwords in database exposed | Passwords are not hashed/encrypted in the database | Passwords clearly visible: https://github.com/Timanttiso/CyberSecurityCourse/blob/main/BookingSystem-Phase1/AddedUsers.png |
 | F-03 | 🔴 High | Path traversal | Files and directories possibly accessable for attackers | ZAP report flag, found in the ZAP report |
 | F-04 | 🟠 Medium | Content Security Policy header not set | CSP headers which help to mitigate and detect certain types of attacks are not set | ZAP report flag, found in the ZAP report |
-| F-05 | 🟡 Low | Weak password policy | Accepts weak passwords and no checks done to how long the password is or what it contains | In picture passwords like "123" and "ZAP" allowed: https://github.com/Timanttiso/CyberSecurityCourse/blob/main/BookingSystem-Phase1/AddedUsers.png |
+| F-05 | 🟡 Low | Weak password policy | Accepts weak passwords and no checks done to how long the password is or what it contains(besides for it being empty) | In picture passwords like "123" and "ZAP" allowed: https://github.com/Timanttiso/CyberSecurityCourse/blob/main/BookingSystem-Phase1/AddedUsers.png |
 
 
 # 5️⃣ OWASP ZAP Test Report (Attachment)
