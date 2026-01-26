@@ -48,7 +48,7 @@ Penetration testing done to the registration page of the booking system with ZAP
 
 ---
 
-# 4️⃣ Findings (filled with examples → replace)
+# 4️⃣ Findings 
 
 
 | ID | Severity | Finding | Description | Evidence / Proof |
