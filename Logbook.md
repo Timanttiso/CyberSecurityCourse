@@ -13,3 +13,4 @@
 | 21.1.2026 | 3.5 | Portswigger and lecture | Completed the second lab from the authentication category and completed two labs from the access control category. Finished and returned the Introduction to the PortSwigger enviorement task. Also attended lecture about the booking system project|
 | 22.1.2026 | 0.5 | Booking system project phase 1 part 1 | succesfully created the penetration testing environment |
 | 23.1.2026 | 1.5 | Booking system project phase 1 part 1 | Tested the functionality of the testing environment, did penetration testing on the registration page with ZAP, started writing the testing report. |
+| 26.1.2026 | 1.5 | Booking system project phase 1 part 1 | Finishing testing report |
