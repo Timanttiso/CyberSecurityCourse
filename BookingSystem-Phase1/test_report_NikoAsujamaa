@@ -4,12 +4,12 @@
 - Name: Niko Asujamaa
 
 **Purpose:**  
-- Describe the purpose of this test (e.g., identify vulnerabilities in registration and authentication flows).
+- The purpose of this test is to find vulnerabilities in the bookingsystem's registration page.
 
 **Scope:**  
 - Tested components: Registration page
 - Exclusions: -
-- Test approach: Gray-box / Black-box / White-box
+- Test approach: Gray-box 
 
 **Test environment & dates:**  
 - Start:  23.1.2026 12.47
@@ -17,22 +17,22 @@
 - Test environment details (OS, runtime, DB, browsers): Windows 11 Pro, PostgreSQL, Opera GX(Google)
 
 **Assumptions & constraints:**  
-- e.g., credentials provided, limited time, etc.
+- Limited to only testing the registration page of the system.
 
 ---
 
 # 2️⃣ Executive Summary
 
-**Short summary (1-2 sentences):** Penetration testing done to the registration page of the booking system with ZAP. 
+Penetration testing done to the registration page of the booking system with ZAP. The testing showed a lot of faults in the page, such as vulnerabilities to SQL injections, path traversal and the site lacks security in how it stores passwords.
 
 **Overall risk level:** High
 
 **Top 5 immediate actions:**  
-1.  
-2.  
-3.  
-4.  
-5.  
+1.  Hashing/encrypting passwords in database.
+2.  Fix issue with path traversal.
+3.  Fix logs exposing username information.
+4.  Fix vulnerability to SQL injections.
+5.  Fix weak password policy
 
 ---
 
@@ -54,7 +54,7 @@
 
 | ID | Severity | Finding | Description | Evidence / Proof |
 |------|-----------|----------|--------------|------------------|
-| F-01 | 🔴 High | SQL Injection in registration | Input field allows `' OR '1'='1` injection | Screenshot or sqlmap result |
+| F-01 | 🔴 High | SQL Injection in registration page | Input field allows `' OR '1'='1` injection | Screenshot or sqlmap result |
 | F-02 | 🟠 Medium | Session fixation | Session ID remains unchanged after login | Burp log or response headers |
 | F-03 | 🟡 Low | Weak password policy | Accepts passwords like "12345" | Screenshot of registration success |
 
@@ -69,7 +69,7 @@
 # 5️⃣ OWASP ZAP Test Report (Attachment)
 
 **Purpose:**  
-- Attach or link your OWASP ZAP scan results (Markdown format preferred).
+- Attach or link your OWASP ZAP scan results (Markdown format preferred): https://github.com/Timanttiso/CyberSecurityCourse/blob/main/BookingSystem-Phase1/zap_report_round1.md.
 
 ---
 
