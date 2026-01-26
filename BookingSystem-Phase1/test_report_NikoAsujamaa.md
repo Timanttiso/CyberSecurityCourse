@@ -4,7 +4,7 @@
 - Name: Niko Asujamaa
 
 **Purpose:**  
-- The purpose of this test is to find vulnerabilities in the bookingsystem's registration page.
+- The purpose of this test is to find vulnerabilities in the booking system's registration page.
 
 **Scope:**  
 - Tested components: Registration page
@@ -14,16 +14,16 @@
 **Test environment & dates:**  
 - Start:  23.1.2026 12.47
 - End:  23.1.2026 13.02
-- Test environment details (OS, runtime, DB, browsers): Windows 11 Pro, PostgreSQL, Opera GX(Google)
+- Test environment details (OS, runtime, DB, browsers): Windows 11 Pro, Docker desktop, PostgreSQL, Opera GX(Google)
 
 **Assumptions & constraints:**  
-- Limited to only testing the registration page of the system.
+- Limited scope to only testing the registration page of the system.
 
 ---
 
 # 2️⃣ Executive Summary
 
-Penetration testing done to the registration page of the booking system with ZAP. The testing showed a lot of faults in the page, such as vulnerabilities to SQL injections, path traversal and the site lacks security in how it stores passwords.
+Penetration testing done to the registration page of the booking system with ZAP. The testing showed a lot of faults in the page, such as vulnerabilities to SQL injections, path traversal and the site lacks security in how it stores passwords and what passwords are allowed.
 
 **Overall risk level:** High
 
@@ -32,7 +32,7 @@ Penetration testing done to the registration page of the booking system with ZAP
 2.  Fix issue with path traversal.
 3.  Fix logs exposing username information.
 4.  Fix vulnerability to SQL injections.
-5.  Fix weak password policy
+5.  Fix weak password policy by validating user input based on the length of the password and by forcing it to include special characters and numbers.
 
 ---
 
@@ -50,36 +50,19 @@ Penetration testing done to the registration page of the booking system with ZAP
 
 # 4️⃣ Findings (filled with examples → replace)
 
-> Fill in one row per finding. Focus on clarity and the most important issues.
 
 | ID | Severity | Finding | Description | Evidence / Proof |
 |------|-----------|----------|--------------|------------------|
-| F-01 | 🔴 High | SQL Injection in registration page | Input field allows OR '1'='1` -- and AND '1'='1` -- injections | ZAP report flag |
+| F-01 | 🔴 High | SQL Injection in registration page | Input field allows OR '1'='1` -- and AND '1'='1` -- injections | ZAP report flag, found in the ZAP report |
 | F-02 | 🔴 High | Passwords in database exposed | Passwords are not hashed/encrypted in the database | Passwords clearly visible: https://github.com/Timanttiso/CyberSecurityCourse/blob/main/BookingSystem-Phase1/AddedUsers.png |
-| F-03 | 🔴 High | Path traversal | Files and directories possibly accessable for attackers | ZAP report flag |
+| F-03 | 🔴 High | Path traversal | Files and directories possibly accessable for attackers | ZAP report flag, found in the ZAP report |
+| F-04 | 🟠 Medium | Content Security Policy header not set | CSP headers which help to mitigate and detect certain types of attacks are not set | ZAP report flag, found in the ZAP report |
 | F-05 | 🟡 Low | Weak password policy | Accepts weak passwords and no checks done to how long the password is or what it contains | In picture passwords like "123" and "ZAP" allowed: https://github.com/Timanttiso/CyberSecurityCourse/blob/main/BookingSystem-Phase1/AddedUsers.png |
 
----
-
-> [!NOTE]
-> Include up to 5 findings total.   
-> Keep each description short and clear.
-
----
 
 # 5️⃣ OWASP ZAP Test Report (Attachment)
 
 **Purpose:**  
-- Attach or link your OWASP ZAP scan results (Markdown format preferred): https://github.com/Timanttiso/CyberSecurityCourse/blob/main/BookingSystem-Phase1/zap_report_round1.md.
+-  https://github.com/Timanttiso/CyberSecurityCourse/blob/main/BookingSystem-Phase1/zap_report_round1.md.
 
----
 
-**Instructions:**
-1. Check lecture recordings
-2. Save the report as `zap_report_round1.md` and link it below.
-
----
-> [!NOTE]
-> 📁 **Attach full report:** → `check itslearning` → **Add a link here**
-
----
