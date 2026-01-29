@@ -15,3 +15,4 @@
 | 23.1.2026 | 1.5 | Booking system project phase 1 part 1 | Tested the functionality of the testing environment, did penetration testing on the registration page with ZAP, started writing the testing report. |
 | 26.1.2026 | 1.5 | Booking system project phase 1 part 1 | Finishing testing report |
 | 27.1.2026 | 2 | Portswigger | Completed 1 lab from SQL Injection, Completed 1 lab from Authentication, Completed 2 labs from Access Control and completed all 6 path traversal labs |
+| 29.1.2026 | 0.5 | Portswigger | Completed 4 labs from Access Control |
