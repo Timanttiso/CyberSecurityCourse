@@ -19,3 +19,4 @@
 | 1.2.2026 | 2.5 | Booking system project phase 1 part 2 | Created testing enviorement, did penetration testing to the enviorement and finished writing part 2 report |
 | 6.2.2026 | 0.5 | Booking system project phase 2 | Created the new testing enviorement and verified it's functionality. Started going through the material. |
 | 8.2.2026 | 2.0 | Booking system project phase 2 | Went through the material, did penetration testing on the version of the enviorement and watched the video about password cracking |
+| 9.2.2026 | 1.5 | Booking system project phase 2 | Cracked 5 passwords using hashcat and answered questions in task 3 and completed the report for the task |
