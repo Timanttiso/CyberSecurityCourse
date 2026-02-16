@@ -5,7 +5,7 @@
 **✅ Can do**
 
 List every action a *Guest* can perform, with the page or endpoint.
-
+* Can view frontpage ´/´
 
 
 
