@@ -12,7 +12,9 @@ List every action a *Guest* can perform, with the page or endpoint.
 * Can log-in as an already existing user `/login`
 * Can view resources page and add resources `/resources` Note: Should not happen and is a flaw in authorization(bug)
 * Can access status page `/status.html`
-
+* Can view users from the API `/api/users` Note: This is not intended and is a massive security hazard, these should not be available publicly.
+* Can view resources from the API `/api/resources` Note: Guest probably should not be able to view API output
+* Can view reservations from the API `/api/reservations` Note: Guest probably should not be allowed to view API output.
 
 ---
 
@@ -22,6 +24,7 @@ List every action that a *Guest* is blocked from doing.
 * Cannot access reservation page `/reservation`
 * Cannot access reservation edit page `/reservation?id`
 * Cannot access resources edit page `/resources?id`
+* Cannot view current session from API `/api/session`
 
 
 ---
@@ -49,6 +52,10 @@ Include visible pages **and** API endpoints.
 * Can edit and delete resources `/resources?id` Note: This is unintended and while the user is blocked from opening the edit resource page in the UI they can still just enter the parameter ?id and the right id into the URL and get to the edit page. This is a failure of authorization(bug). Also user can open already deleted resources to edit, which is also a bug(bug)
 * Can edit others reservations `/reservation?id` Note: As a reserver you are blocked in the UI from accessing the editing page of other people's reservations. This is easily side stepped by just editing the URL parameter to have the other person reservation's id and you are able edit it. Problem with authorization(bug).
 * Can access status page `/status.html`
+* Can view users from the API `/api/users` Note: This is not intended and is a massive security hazard, these should not be available publicly.
+* Can view resources from the API `/api/resources`
+* Can view reservations from the API `/api/reservations`
+* Can view current session from the API `/api/session`
   
 ---
 
@@ -81,6 +88,10 @@ List actions an *Administrator* can perform.
 * Can delete reservations `/reservation?id`
 * Can logout of user `/logout`
 * Can access status page `/status.html`
+* Can view users from the API `/api/users` Note: This is not intended and is a massive security hazard, these should not be available publicly.
+* Can view resources from the API `/api/resources`
+* Can view reservations from the API `/api/reservations`
+* Can view current session from teh API `/api/session`
 
 ---
 
