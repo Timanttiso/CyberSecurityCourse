@@ -44,7 +44,7 @@ Include visible pages **and** API endpoints.
 * Can add resources `/resources`
 * Can view create reservations page `/reservation`
 * Can make reservations `/reservation` Note: user can also make reservations to the past(bug/unintended feature)
-* Can edit own reservations `/reservation?id` Note: In update view user can also change the reservation name to be someone else besides themselves allowing them to make reservations for others, which is a flaw in authorization(bug).
+* Can edit and delete own reservations `/reservation?id` Note: In update view user can also change the reservation name to be someone else besides themselves allowing them to make reservations for others, which is a flaw in authorization(bug).
 * Can logout of user `/logout`
 * Can edit and delete resources `/resources?id` Note: This is unintended and while the user is blocked from opening the edit resource page in the UI they can still just enter the parameter ?id and the right id into the URL and get to the edit page. This is a failure of authorization(bug). Also user can open already deleted resources to edit, which is also a bug(bug)
 * Can edit others reservations `/reservation?id` Note: As a reserver you are blocked in the UI from accessing the editing page of other people's reservations. This is easily side stepped by just editing the URL parameter to have the other person reservation's id and you are able edit it. Problem with authorization(bug).
