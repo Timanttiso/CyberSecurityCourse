@@ -11,7 +11,7 @@ List every action a *Guest* can perform, with the page or endpoint.
 * Can view log-in page `/login`
 * Can log-in as an already existing user `/login`
 * Can view resources page and add resources `/resources` Note: Should not happen and is a flaw in authorization(bug)
-
+* Can access status page `/status.html`
 
 
 ---
@@ -48,7 +48,8 @@ Include visible pages **and** API endpoints.
 * Can logout of user `/logout`
 * Can edit and delete resources `/resources?id` Note: This is unintended and while the user is blocked from opening the edit resource page in the UI they can still just enter the parameter ?id and the right id into the URL and get to the edit page. This is a failure of authorization(bug). Also user can open already deleted resources to edit, which is also a bug(bug)
 * Can edit others reservations `/reservation?id` Note: As a reserver you are blocked in the UI from accessing the editing page of other people's reservations. This is easily side stepped by just editing the URL parameter to have the other person reservation's id and you are able edit it. Problem with authorization(bug).
-
+* Can access status page `/status.html`
+  
 ---
 
 **❌ Cannot do**
@@ -79,6 +80,7 @@ List actions an *Administrator* can perform.
 * Can edit reservations `/reservation?id` 
 * Can delete reservations `/reservation?id`
 * Can logout of user `/logout`
+* Can access status page `/status.html`
 
 ---
 
