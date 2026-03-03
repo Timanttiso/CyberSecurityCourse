@@ -23,3 +23,4 @@
 | 12.2.2026 | 2.0 | Centria Lab | Took part in a lab, where we showed how we can do a penetration test with ZAP and how to use burp suite to do portswigger tasks |
 | 15.2.2026 | 1.5 | Booking system project phase 3 | Read through the material, watched the introduction video to phase 3, created testing enviorement and tested that it works. |
 | 16.2.2026 | 3.0 | Booking system project phase 3 | Did thorough manual testing to check for authorization or authentication issues. Did penetration testing with ZAP. Installed gobuster then found API endpoints with gobuster. Wrote auth report. Submitted task |
+| 3.3.2026 | 3.0 | Booking system project phase 4 | Read the material, looked into GDPR and set up the latest testing enviorement and tested that it works. |
