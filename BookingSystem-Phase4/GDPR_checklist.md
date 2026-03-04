@@ -2,25 +2,25 @@
 
 | **Result** | **Personal data mapping and minimization** | **Notes** |
 | :----: | :--- |:--- |
-| &nbsp;❌&nbsp; | Have all personal data collected and processed in the system been<br> identified? (e.g., name, email, age, username) | The IP address of the user is collected in the login logs, which is not specified anywhere |
-| &nbsp;✅/❌/⚠️&nbsp; | Have you ensured that only necessary personal data is collected (data minimization)? | |
-| &nbsp;✅/❌/⚠️&nbsp; | Is user age recorded to verify that the booker is over 15 years old? | |
+| &nbsp;❌&nbsp; | Have all personal data collected and processed in the system been<br> identified? (e.g., name, email, age, username) | The IP address of the user is collected in the login logs, which is not specified anywhere. |
+| &nbsp;✅&nbsp; | Have you ensured that only necessary personal data is collected (data minimization)? | From what I can tell only necessary data is collected. |
+| &nbsp;✅&nbsp; | Is user age recorded to verify that the booker is over 15 years old? | The user age itself is not stored anywhere, but the age can be calculated from the birthday provided. User accounts under 15 are not also allowed to be made. |
 
 ---
 
 | **Result** | **User registration and management** | **Notes** |
 | :----: | :--- | :--- |
-| &nbsp;✅/❌/⚠️&nbsp; | Does the registration form (page) include GDPR-compliant consent for processing<br> personal data (e.g., acceptance of the privacy policy)?| |
-| &nbsp;✅/❌/⚠️&nbsp; | Can users view, edit, and delete their own personal data via their account? | |
-| &nbsp;✅/❌/⚠️&nbsp; | Is there a mechanism for the administrator to delete a reserver in<br> accordance with the "right to be forgotten"? | |
-| &nbsp;✅/❌/⚠️&nbsp; | Is underage registration (under 15 years) and booking functionality restricted? | |
+| &nbsp;✅&nbsp; | Does the registration form (page) include GDPR-compliant consent for processing<br> personal data (e.g., acceptance of the privacy policy)?| The check box to accept the terms would qualify as consent. |
+| &nbsp;❌&nbsp; | Can users view, edit, and delete their own personal data via their account? | Account info can be viewed but not deleted or edited. |
+| &nbsp;⚠️&nbsp; | Is there a mechanism for the administrator to delete a reserver in<br> accordance with the "right to be forgotten"? | There is no clear admin panel accessable through the UI nor anything of the like that you can use to delete users, but technically speaking users and other information could be deleted straight from the database but that would be hard and time consuming |
+| &nbsp;✅&nbsp; | Is underage registration (under 15 years) and booking functionality restricted? | People under 15 are not able to register |
 
 ---
 
 | **Result** | **Booking visibility** | **Notes** |
 | :----: | :--- | :--- |
-| &nbsp;✅/❌/⚠️&nbsp; | Are bookings visible to non-logged-in users only at the resource level<br> (without any personal data)? | |
-| &nbsp;✅/❌/⚠️&nbsp; | Is it ensured that names, emails, or other personal data of bookers are not exposed<br> publicly or to unauthorized users? | |
+| &nbsp;✅&nbsp; | Are bookings visible to non-logged-in users only at the resource level<br> (without any personal data)? | This is fine. Account info is not visible to not logged in users. |
+| &nbsp;⚠️&nbsp; | Is it ensured that names, emails, or other personal data of bookers are not exposed<br> publicly or to unauthorized users? | No information is visible to not logged in users, but other reservers can see the emails of other reservers, which could be problematic, since anyone can sign up. Best practice would probably be that the admin can only see the emails of the users. |
 
 --- 
 
