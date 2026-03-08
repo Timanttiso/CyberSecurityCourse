@@ -77,7 +77,7 @@ You agree **not** to:
 - Attempt to breach or circumvent security measures  
 - Interfere with the operation of the Service  
 - Upload or transmit harmful code  
-- Misuse administrative privileges (if applicable)  
+- Misuse administrative privileges
 
 Violation of these rules may result in account suspension or termination.
 
