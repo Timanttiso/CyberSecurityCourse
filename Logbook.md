@@ -25,3 +25,4 @@
 | 16.2.2026 | 3.0 | Booking system project phase 3 | Did thorough manual testing to check for authorization or authentication issues. Did penetration testing with ZAP. Installed gobuster then found API endpoints with gobuster. Wrote auth report. Submitted task |
 | 3.3.2026 | 3.0 | Booking system project phase 4 | Read the material, looked into GDPR and set up the latest testing enviorement and tested that it works. |
 | 4.3.2026 | 2.5 | Booking system project phase 4 | Started going through the GDPR checklist and checking if the application matches what is asked and going through some of the material again to check that the answers are right |
+| 8.3.2026 | 2.0 | Booking system project phase 4 | Finished filling out the GDPR checklist. Created privacy policy, ToS and cookie policy for the reservation application. |
