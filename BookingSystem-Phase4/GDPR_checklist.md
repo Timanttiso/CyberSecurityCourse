@@ -26,49 +26,49 @@
 
 | **Result** | **Access control and authorization** | **Notes** |
 | :----: | :--- | :--- |
-| &nbsp;✅/❌/⚠️&nbsp; | Have you ensured that only administrators can add, modify, and delete<br> resources and bookings? | |
-| &nbsp;✅/❌/⚠️&nbsp; | Is the system using role-based access control (e.g., reserver vs. administrator)? | |
-| &nbsp;✅/❌/⚠️&nbsp; | Are administrator privileges limited to ensure GDPR compliance (e.g., administrators<br> cannot use data for unauthorized purposes)? | |
+| &nbsp;❌&nbsp; | Have you ensured that only administrators can add, modify, and delete<br> resources and bookings? | Reserver users are able to modify reservations of other users. |
+| &nbsp;✅&nbsp; | Is the system using role-based access control (e.g., reserver vs. administrator)? | System has different roles, which affect what users can do. Even though reservers can do things they probably shouldn't |
+| &nbsp;✅&nbsp; | Are administrator privileges limited to ensure GDPR compliance (e.g., administrators<br> cannot use data for unauthorized purposes)? | The administrator has pretty decently limited privileges. Though the administrator can see some data of the user, which they could use for identity theft of some kind, which could be problematic |
 
 ---
 
 | **Result** | **Privacy by Design Principles** | **Notes** |
 | :----: | :--- | :--- |
-| &nbsp;✅/❌/⚠️&nbsp; | Has Privacy by Default been implemented (e.g., collecting the minimum data by default)? | |
-| &nbsp;✅/❌/⚠️&nbsp; | Are logs implemented without unnecessarily storing personal data? | |
-| &nbsp;✅/❌/⚠️&nbsp; | Are forms and system components designed with data protection in mind<br> (e.g., secured login, minimal fields)? | |
+| &nbsp;⚠️&nbsp; | Has Privacy by Default been implemented (e.g., collecting the minimum data by default)? | User IP address is collected by default in logs, which might not meet criteria for minimum data. |
+| &nbsp;⚠️&nbsp; | Are logs implemented without unnecessarily storing personal data? | IP address is collected, but user's name or email is not included, which is good. |
+| &nbsp;✅&nbsp; | Are forms and system components designed with data protection in mind<br> (e.g., secured login, minimal fields)? | Forms do not contain any unecessary fields and are mostly minimal. |
 
 ---
 
 | **Result** | **Data security** | **Notes** |
 | :----: | :--- | :--- |
-| &nbsp;✅/❌/⚠️&nbsp; | Are CSRF, XSS, and SQL injection protections implemented? | |
-| &nbsp;✅/❌/⚠️&nbsp; | Are passwords securely hashed using a strong algorithm (e.g., bcrypt, Argon2)? | |
-| &nbsp;✅/❌/⚠️&nbsp; | Are data backup and recovery processes GDPR-compliant? | |
-| &nbsp;✅/❌/⚠️&nbsp; | Is personal data stored in data centers located within the EU? | |
+| &nbsp;✅&nbsp; | Are CSRF, XSS, and SQL injection protections implemented? | I was unable to find issues with this while doing pen testing. |
+| &nbsp;✅&nbsp; | Are passwords securely hashed using a strong algorithm (e.g., bcrypt, Argon2)? | Passwords use bcrypt. |
+| &nbsp;❌&nbsp; | Are data backup and recovery processes GDPR-compliant? | There seem to be a lack of any data backup or recovery processes. |
+| &nbsp;✅&nbsp; | Is personal data stored in data centers located within the EU? | The application is running locally and I am in the EU, so yes. |
 
 ---
 
 | **Result** | **Data anonymization and pseudonymization** | **Notes** |
 | :----: | :--- | :--- |
-| &nbsp;✅/❌/⚠️&nbsp; | Is personal data anonymized where possible? | |
-| &nbsp;✅/❌/⚠️&nbsp; | Are pseudonymization techniques used to protect data while maintaining its utility? | |
+| &nbsp;✅&nbsp; | Is personal data anonymized where possible? | The database uses user tokens to avoid connecting any of the data to the user's personal information |
+| &nbsp;✅&nbsp; | Are pseudonymization techniques used to protect data while maintaining its utility? | The database uses user tokens to avoid connecting any of the data to the user's personal information |
 
 ---
 
 | **Result** | **Data subject rights** | **Notes** |
 | :----: | :--- | :--- |
-| &nbsp;✅/❌/⚠️&nbsp; | Can users download or request all personal data related to them (data access request)? | |
-| &nbsp;✅/❌/⚠️&nbsp; | Is there an interface or process for users to request the deletion of their personal data? | |
-| &nbsp;✅/❌/⚠️&nbsp; | Can users withdraw their consent for data processing? | |
+| &nbsp;❌&nbsp; | Can users download or request all personal data related to them (data access request)? | This is not possible in the app. |
+| &nbsp;❌&nbsp; | Is there an interface or process for users to request the deletion of their personal data? | App has not interface for this. |
+| &nbsp;❌&nbsp; | Can users withdraw their consent for data processing? | |
 
 ---
 
 | **Result** | **Documentation and communication** | **Notes** |
 | :----: | :--- | :--- |
-| &nbsp;✅/❌/⚠️&nbsp; | Is there a privacy policy available to users during registration and easily accessible? | |
-| &nbsp;✅/❌/⚠️&nbsp; | Are administrators and developers provided with documented data protection practices <br>and processing activities? | |
-| &nbsp;✅/❌/⚠️&nbsp; | Is there a documented data breach response process (e.g., how to notify authorities <br>and users of a breach)? | |
+| &nbsp;❌&nbsp; | Is there a privacy policy available to users during registration and easily accessible? | The privacy policy is empty. |
+| &nbsp;❌&nbsp; | Are administrators and developers provided with documented data protection practices <br>and processing activities? | At least as an admin I am not able to find any documentation on this on the app. |
+| &nbsp;❌&nbsp; | Is there a documented data breach response process (e.g., how to notify authorities <br>and users of a breach)? | There is not. |
 
 ---
 
